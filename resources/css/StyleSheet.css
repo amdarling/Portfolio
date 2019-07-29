@@ -9,7 +9,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: black;
+    background-color: dodgerblue;
     /*height: 50px;*/
 }
 
@@ -153,7 +153,7 @@ body {
 .banner {
     height: 170px;
     background-color: #cccccc;
-    background-image: linear-gradient(dodgerblue, cadetblue);
+    background-image: linear-gradient(#ff982d, #da1762);
     color: cadetblue
 }
 

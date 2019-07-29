@@ -4,38 +4,41 @@
 <title>
 	Palindrome Test
 </title>
-    <link rel="stylesheet" href="./resources/css/StyleSheet.css">
+    <link rel="stylesheet" href="./resources/css/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="Home.html">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Tests</button>
-            <div class="ddcontent">
-                <a href="PalindromeTest.html">Palindrome</a>
-                <a href="HigherLower.html">Higher or Lower</a>
-                <a class="active" href="Kapow.html">Kapow</a>
+    <div id="wrapper">
+        <div class="navbar" id="navibar">
+            <a href="Home.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tests</button>
+                <div class="ddcontent">
+                    <a href="PalindromeTest.html">Palindrome</a>
+                    <a href="HigherLower.html">Higher or Lower</a>
+                    <a class="active" href="Kapow.html">Kapow</a>
+                </div>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i></a>
-    </div>
-    <!--<div class="banner">-->
-        <div class="guide">
-            <h1>KAPOW</h1>
-            Replace the multiples of two numbers of your choice up to 100 with ka and pow.
-        </div>
-    <!--</div>-->
+        <!--<div class="banner">-->
+            <div class="guide">
+                <h1>KAPOW</h1>
+                Replace the multiples of two numbers of your choice up to 100 with ka and pow.
+            </div>
+        <!--</div>-->
 
-    <div class="container">
-		<p>Please enter two numbers</p>
-		<input type="number" name="first" id="first" ><br>
-        <input type="number" name="second" id="second" ><br>
-		<input type="button" class="button" value="Submit" onclick="replace()">
-	</div>
-    <div id="message" style="white-space: pre-wrap;">
+        <div class="container">
+		    <p>Please enter two numbers</p>
+		    <input type="number" name="first" id="first" ><br>
+            <input type="number" name="second" id="second" ><br>
+		    <input type="button" class="button" value="Submit" onclick="replace()">
+	    </div>
+        <div id="message" style="white-space: pre-wrap;">
 	
-	</div>
+	    </div>
+    </div>
 <script>
     function myFunction() {
         var x = document.getElementById("navibar");
