@@ -1,158 +1,35 @@
-﻿
-$orange: #ecbe4e;
-$pink: #da2b66;
-$paleP: #db7e4f;
-$blue: #6082b6;
-$paleb: #9aa9cb;
+/*@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";*/
+
+@import "Navbar";
+
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: $orange;
-
-    a {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-
-    }
-
-    .icon {
-        display: none;
-    }
-}
-
-a.active {
-    background-color: $pink;
+footer {
+    background-color: black;
     color: white;
+    height: 50px;
+    padding: 25px 20px 0px;
 }
 
-a:hover{
-    background-color: $paleP
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.banner {
-    height: 170px;
-    background-color: #cccccc;
-    background-image: linear-gradient(#ff982d, #da1762);
-    /*color: cadetblue*/
-}
-
-.dropdown:hover {
-    .ddcontent {
-        display: block;
-    }
-
-    .dropbtn {
-        background-color: $orange;
-    }
-}
-
-.dropbtn {
-    font-size: 17px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-
-}
-
-.ddcontent {
-    display: none;
-    position: absolute;
-    background-color: $orange;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-    a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-
-    a.active {
-        color: white;
-    }
-
-    a:hover {
-        background-color: $paleP;
-    }
-}
-
-.banner {
-    height: 170px;
-    background-color: #cccccc;
-    background-image: linear-gradient($orange, $pink);
-    /*color: cadetblue*/
-}
-
-@media screen and (max-width: 600px) {
-    .navbar {
-        a:not(:first-child), .dropdown .dropbtn {
-            display: none;
-        }
-
-        a.icon {
-            float: right;
-            display: block;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .navbar.responsive {
-        position: relative;
-
-        .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown {
-            float: none;
-        }
-
-        .dropdown .dropbtn {
-            display: block;
-            width: 100%;
-            text-align: left;
-        }
-    
-        .ddcontent {
-            position: relative;
-        }
-        
-    }
-}
-
-
 
 #container, #message {
     margin: 0 auto;
@@ -175,33 +52,11 @@ a:hover{
     width: 275px;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-
 .guide {
     height: 170px;
     /*background-color: #cccccc;
     background-image: linear-gradient(red, darkred);*/
     padding: 25px 50px;
-}
-
-.words {
-    color: white;
-    padding: 25px 50px;
-}
-
-.article {
-    padding: 10px 50px;
-    margin: 10px;
-    width: 25%;
-    display: inline-block;
-    border-left: 5px solid $blue;
-    background-color: $paleb;
 }
 
 .container {
@@ -213,12 +68,6 @@ a:hover{
     justify-content: center;
     align-content: space-around;
     /*border: 2px solid green;*/
-}
-
-.containerFront {
-    display: flex;
-    width: 75%;
-    margin: 20px auto;
 }
 
 .card {
@@ -242,36 +91,9 @@ a:hover{
     padding: 10px;
 }
 
-.code {
-    margin: 10px;
-    background-color: dimgray;
-    padding: 5px;
-    border-radius: 5px;
-    font-family: Consolas, monaco, monospace;
-    font-weight: bold;
-    color: white;
-}
-
-.name {
-    color: khaki;
-}
-
-.attribute {
-    color: lightskyblue;
-}
-
-.newSticker {
-    width: 20vw;
-    height: 20vh;
-}
-
-.test {
-    font-weight: bold;
-}
-
-#wrapper {
+/*#wrapper {
     background-image: url("triangle.png");
     background-repeat: no-repeat;
-    /*background-position: right;*/
+    /*background-position: right;*
     height: 50vw;
-}
+}*/
