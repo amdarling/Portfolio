@@ -1,0 +1,167 @@
+$orange: #ecbe4e;
+$pink: #da2b66;
+$paleP: #db7e4f;
+$blue: #6082b6;
+$paleb: #9aa9cb;
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    height: 75px;
+
+    a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        /*padding: 14px 16px;*/
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .icon {
+        display: none;
+    }
+}
+
+#home {
+    float: left;
+    height: 75px;
+    padding:0;
+}
+
+#about {
+    padding: 27.5px 16px;
+    color: white;
+}
+
+a.active {
+    background-color: $pink;
+    color: white;
+}
+
+a:hover {
+    background-color: $paleP
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.dropdown:hover {
+    .ddcontent {
+        display: block;
+    }
+
+    .dropbtn {
+        background-color: black;
+    }
+}
+
+.dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 27.5px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.ddcontent {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: auto;
+    right: 0;
+    margin-right: -10px;
+
+    a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    a.active {
+        color: white;
+    }
+
+    a:hover {
+        background-color: $paleP;
+    }
+}
+
+.banner {
+    /*height: 170px;
+    background-color: #cccccc;
+    background-image: linear-gradient($orange, $pink);*/
+    /*color: cadetblue*/
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 90vw;
+}
+
+/*img {
+    width: 100px;
+    /*max-height: 10%;
+    transform: scale(10);*/
+/*}*/
+@media screen and (max-width: 600px) {
+    .navbar {
+        a:not(:first-child), .dropdown .dropbtn {
+            display: none;
+        }
+
+        a.icon {
+            float: right;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+
+        .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown {
+            float: none;
+        }
+
+        .dropdown .dropbtn {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+
+        .ddcontent {
+            position: relative;
+        }
+    }
+}
